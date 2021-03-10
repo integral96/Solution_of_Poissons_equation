@@ -284,4 +284,10 @@ inline void gen_rand_array(Array& A, T min, T max, int n = 0) {
     for(size_t i = 0; i < N; ++i)
             A[i] = dist(gen);
 }
+/*
+Bicubic interpolation polynomial
+This section provides an alternative way to calculate bicubic interpolation. For most purposes this way is probably less practical and efficient than the way it is done above.
+
+We can rewrite the formula for bicubic interpolation as a multivariate polynomial:
+*/
 
